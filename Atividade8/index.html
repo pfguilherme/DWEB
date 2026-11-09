@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="form">
+        <label for="age">Idade:</label>
+        <input type="number" name="age" id="age">
+        <br>
+        <label for="sex">Sexo:</label>
+        <br>
+        <div class="sex-options">
+            <div class="sex-option">
+                <label for="sex">Masculino:</label>
+                <input type="radio" name="sex" value="male" checked>
+            </div>
+            <br>
+            <div class="sex-option">
+                <label for="sex">Feminino:</label>
+                <input type="radio" name="sex" value="female">
+            </div>
+            <br>
+            <div class="sex-option">
+                <label for="sex">Outro:</label>
+                <input type="radio" name="sex" value="other">
+            </div>
+        </div>
+        <label for="opnion">Opnião:</label>
+        <select name="opnion" id="opnion">
+            <option value="1">Péssimo</option>
+            <option value="2">Regular</option>
+            <option value="3">Bom</option>
+            <option value="4">Ótimo</option>
+        </select>
+        <br>
+        <input type="submit" value="Enviar" onclick="Entrar();">
+        <input type="button" value="Visualizar dados" onclick="VisualizarDados();">
+    </form>
+
+    <section id="form-data" hidden>
+        <p><strong>TOTAL DE RESPOSTAS: <span id="total-answers">0</span></strong></p>
+        <p>Idade média: <span id="age-average">0</span> anos</p>
+        <p>Idade da pessoa mais velha: <span id="age-oldest">0</span> anos</p>
+        <p>Idade da pessoa mais nova: <span id="age-youngest">0</span> anos</p>
+        <p>Quantidade de pessoas que responderam péssimo: <span id="opnion-bad">0</span></p>
+        <p>Porcentagem de pessoas que responderam ótimo e bom: <span id="opnion-good-great">0</span>%</p>
+        <p>Número de homens que responderam ao questionário: <span id="male-quantity">0</span></p>
+        <p>Número de mulheres que responderam ao questionário: <span id="female-quantity">0</span></p>
+        <p>Número de outros que responderam ao questionário: <span id="other-quantity">0</span></p>
+    </section>
+</body>
+</html>
