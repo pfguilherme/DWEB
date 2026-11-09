@@ -1,0 +1,75 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+div {
+    width: 500px;
+    height: 500px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+@media (max-width: 420px) {
+    div {
+        background-color: blue;
+        h2::after {
+            content: "420px";
+        }
+    }
+}
+
+@media (min-width: 421px) and (max-width: 768px) {
+    div {
+        background-color: orange;
+        h2::after {
+            content: "768px";
+        }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    div {
+        background-color: pink;
+        h2::after {
+            content: "1024px";
+        }
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1080px) {
+    div {
+        background-color: salmon;
+        h2::after {
+            content: "1080px";
+        }
+    }
+}
+
+@media (min-width: 1081px) and (max-width: 1366px) {
+    div {
+        background-color: purple;
+        h2::after {
+            content: "1366px";
+        }
+    }
+}
+
+@media (min-width: 1367px) and (max-width: 1920px) {
+    div {
+        background-color: yellow;
+        h2::after {
+            content: "1920px";
+        }
+    }
+}
+
+@media (min-width: 1921px) {
+    div {
+        background-color: green;
+        h2::after {
+            content: "MAIOR QUE 1920PX";
+        }
+    }
+}
