@@ -62,6 +62,6 @@ function funcao5()
     let dataString = prompt("Data no formato MM/DD/AAAA ou AAAA-MM-DD:");
     let data = new Date(dataString);
 
-    let dias = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sábado"];
+    let dias = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"];
     alert("O dia da semana da data é: " + dias[data.getUTCDay()]);
 }
